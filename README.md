@@ -9,5 +9,3 @@ Anahit Avagyan
 ## Languages and Frameworks 
 Java
 SpringBoot
-
-## Running the app
