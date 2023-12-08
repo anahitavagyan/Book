@@ -1,4 +1,4 @@
-package com.trinity.bookLib;
+package com.trinity.bookLib.entities;
 
 import java.time.LocalDate;
 

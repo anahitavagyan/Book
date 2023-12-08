@@ -1,6 +1,7 @@
 package com.trinity.bookLib;
 
 
+import com.trinity.bookLib.entities.Book;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;

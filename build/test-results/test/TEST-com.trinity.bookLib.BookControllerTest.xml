@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trinity.bookLib.BookControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-12-08T00:19:25" hostname="10-252-175-248.student.trincoll.edu" time="1.396">
+<testsuite name="com.trinity.bookLib.BookControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-12-08T00:31:01" hostname="10-252-175-248.student.trincoll.edu" time="1.505">
   <properties/>
-  <testcase name="Product ID: 1" classname="com.trinity.bookLib.BookControllerTest" time="0.918"/>
-  <testcase name="Product ID: 2" classname="com.trinity.bookLib.BookControllerTest" time="0.025"/>
-  <testcase name="Product ID: 3" classname="com.trinity.bookLib.BookControllerTest" time="0.019"/>
-  <testcase name="getBookThatDoesNotExist()" classname="com.trinity.bookLib.BookControllerTest" time="0.065"/>
-  <testcase name="getAllBooks()" classname="com.trinity.bookLib.BookControllerTest" time="0.163"/>
-  <testcase name="insertBook()" classname="com.trinity.bookLib.BookControllerTest" time="0.122"/>
-  <testcase name="deleteBook()" classname="com.trinity.bookLib.BookControllerTest" time="0.06"/>
-  <system-out><![CDATA[19:19:19.260 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.trinity.bookLib.BookControllerTest]: BookControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-19:19:19.515 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.trinity.bookLib.BookLibApplication for test class com.trinity.bookLib.BookControllerTest
-19:19:19.655 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="Product ID: 1" classname="com.trinity.bookLib.BookControllerTest" time="0.992"/>
+  <testcase name="Product ID: 2" classname="com.trinity.bookLib.BookControllerTest" time="0.036"/>
+  <testcase name="Product ID: 3" classname="com.trinity.bookLib.BookControllerTest" time="0.018"/>
+  <testcase name="getBookThatDoesNotExist()" classname="com.trinity.bookLib.BookControllerTest" time="0.081"/>
+  <testcase name="getAllBooks()" classname="com.trinity.bookLib.BookControllerTest" time="0.23"/>
+  <testcase name="insertBook()" classname="com.trinity.bookLib.BookControllerTest" time="0.079"/>
+  <testcase name="deleteBook()" classname="com.trinity.bookLib.BookControllerTest" time="0.043"/>
+  <system-out><![CDATA[19:30:55.089 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.trinity.bookLib.BookControllerTest]: BookControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:30:55.417 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.trinity.bookLib.BookLibApplication for test class com.trinity.bookLib.BookControllerTest
+19:30:55.742 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -20,24 +20,24 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2023-12-07T19:19:19.988-05:00  INFO 2035 --- [    Test worker] com.trinity.bookLib.BookControllerTest   : Starting BookControllerTest using Java 17.0.2 with PID 2035 (started by anahitavagyan in /Users/anahitavagyan/Desktop/CPSC310/BookLib/bookLib)
-2023-12-07T19:19:19.990-05:00  INFO 2035 --- [    Test worker] com.trinity.bookLib.BookControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2023-12-07T19:19:21.388-05:00  INFO 2035 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-07T19:19:21.521-05:00  INFO 2035 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
-2023-12-07T19:19:22.281-05:00  INFO 2035 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-07T19:19:22.481-05:00  INFO 2035 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f53c8fd4-58fa-4889-ad17-a85bf0bc0b1f user=SA
-2023-12-07T19:19:22.486-05:00  INFO 2035 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-07T19:19:22.589-05:00  INFO 2035 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-07T19:19:22.640-05:00  INFO 2035 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2023-12-07T19:19:22.675-05:00  INFO 2035 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2023-12-07T19:19:22.890-05:00  INFO 2035 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-12-07T19:19:23.604-05:00  INFO 2035 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-12-07T19:19:23.631-05:00  INFO 2035 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-07T19:19:24.410-05:00  WARN 2035 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-07T19:19:25.103-05:00  INFO 2035 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-12-07T19:19:25.105-05:00  INFO 2035 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-12-07T19:19:25.111-05:00  INFO 2035 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2023-12-07T19:19:25.223-05:00  INFO 2035 --- [    Test worker] com.trinity.bookLib.BookControllerTest   : Started BookControllerTest in 5.575 seconds (process running for 7.25)
+2023-12-07T19:30:56.226-05:00  INFO 2529 --- [    Test worker] com.trinity.bookLib.BookControllerTest   : Starting BookControllerTest using Java 17.0.2 with PID 2529 (started by anahitavagyan in /Users/anahitavagyan/Documents/GitHub/BookLibrary)
+2023-12-07T19:30:56.227-05:00  INFO 2529 --- [    Test worker] com.trinity.bookLib.BookControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-12-07T19:30:57.668-05:00  INFO 2529 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07T19:30:57.804-05:00  INFO 2529 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2023-12-07T19:30:58.532-05:00  INFO 2529 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-07T19:30:58.736-05:00  INFO 2529 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:207680ef-3aaf-4c57-81c3-2ff9eac1de3f user=SA
+2023-12-07T19:30:58.741-05:00  INFO 2529 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-07T19:30:58.855-05:00  INFO 2529 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07T19:30:58.905-05:00  INFO 2529 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-07T19:30:58.940-05:00  INFO 2529 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-07T19:30:59.162-05:00  INFO 2529 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-07T19:30:59.938-05:00  INFO 2529 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-07T19:30:59.969-05:00  INFO 2529 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07T19:31:00.850-05:00  WARN 2529 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-07T19:31:01.370-05:00  INFO 2529 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-07T19:31:01.371-05:00  INFO 2529 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-07T19:31:01.378-05:00  INFO 2529 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-07T19:31:01.484-05:00  INFO 2529 --- [    Test worker] com.trinity.bookLib.BookControllerTest   : Started BookControllerTest in 5.769 seconds (process running for 7.94)
 There are 3 books in the database.
 There are 3 books in the database.
 
@@ -62,8 +62,8 @@ MockHttpServletRequest:
     Session Attrs = {}
 
 Handler:
-             Type = com.trinity.bookLib.BookController
-           Method = com.trinity.bookLib.BookController#getAllBooks()
+             Type = com.trinity.bookLib.controllers.BookController
+           Method = com.trinity.bookLib.controllers.BookController#getAllBooks()
 
 Async:
     Async started = false

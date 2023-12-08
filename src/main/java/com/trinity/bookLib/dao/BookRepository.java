@@ -1,5 +1,6 @@
-package com.trinity.bookLib;
+package com.trinity.bookLib.dao;
 
+import com.trinity.bookLib.entities.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookRepository extends JpaRepository<Book, Long> {

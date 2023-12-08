@@ -1,5 +1,7 @@
-package com.trinity.bookLib;
+package com.trinity.bookLib.config;
 
+import com.trinity.bookLib.entities.Book;
+import com.trinity.bookLib.dao.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

@@ -1,12 +1,13 @@
-package com.trinity.bookLib;
+package com.trinity.bookLib.controllers;
 
+import com.trinity.bookLib.entities.Book;
+import com.trinity.bookLib.dao.BookRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/books")
